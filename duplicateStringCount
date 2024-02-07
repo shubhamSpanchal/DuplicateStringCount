@@ -17,7 +17,6 @@ public class Program
 			}
 		}
 		result += name[0] + " = " + count + "\n";
-		name = name.Replace(name[0].ToString(), string.Empty);
 		}
 		Console.WriteLine(result);
 	}

@@ -4,20 +4,20 @@ public class Program
 {
 	public static void Main()
 	{
-		string inputtext = "shubhamPanchals";
+		string name = "shubhamPanchals";
 		string result = string.Empty;
-		while (inputtext .Length > 0)
+		while (name .Length > 0)
 		{
 		int count = 0;
-		for (int i = 0; i < inputtext.Length; i++)
+		for (int i = 0; i < name.Length; i++)
 		{
-			if (inputtext[0] == inputtext[i])
+			if (name[0] == name[i])
 			{
 			count++;
 			}
 		}
-		result += inputtext[0] + " = " + count + "\n";
-		inputtext = inputtext.Replace(inputtext[0].ToString(), string.Empty);
+		result += name[0] + " = " + count + "\n";
+		name = name.Replace(name[0].ToString(), string.Empty);
 		}
 		Console.WriteLine(result);
 	}

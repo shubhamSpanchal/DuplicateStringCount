@@ -1,0 +1,24 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string inputtext = "shubhamPanchals";
+		string result = string.Empty;
+		while (inputtext .Length > 0)
+		{
+		int count = 0;
+		for (int i = 0; i < inputtext.Length; i++)
+		{
+			if (inputtext[0] == inputtext[i])
+			{
+			count++;
+			}
+		}
+		result += inputtext[0] + " = " + count + "\n";
+		inputtext = inputtext.Replace(inputtext[0].ToString(), string.Empty);
+		}
+		Console.WriteLine(result);
+	}
+}
